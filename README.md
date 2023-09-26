@@ -27,19 +27,6 @@ In your web.php add bellow code to the end of the file.
 require __DIR__ .'/backend.php';
 ```
 
-### Update Composer file
-In your composer.json file add bellow code to the "autoload" part of the file.
-```php
-"files": [
-        "app/Helper/Helper.php"
-    ]  
-```
-### Update Composer
-In your project directory run bellow command to autoload helper files.
-```php
-composer dump-autoload
-```
-
 *You're done! Enjoy!*
 
 ### Changelog

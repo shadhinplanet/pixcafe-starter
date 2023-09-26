@@ -8,7 +8,7 @@
         "psr-4": {
             "Pixcafe\\Starter\\": "src/"
         },
-        "files": ["src/Helper.php"]
+        "files": ["src/Helper/Helper.php"]
     },
     "authors": [
         {

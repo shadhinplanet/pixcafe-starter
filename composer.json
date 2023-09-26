@@ -1,0 +1,36 @@
+{
+    "name": "pixcafe/starter",
+    "description": "The \"Starter\" package will help you get start with your new Laravel project with a awesome backend template.",
+    "keywords": ["laravel", "starter", "pixcafe"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pixcafe\\Starter\\": "src/"
+        },
+        "files": ["app/Helper/Helper.php"]
+    },
+    "authors": [
+        {
+            "name": "Shadhin Ahmed",
+            "email": "shadhinplanet@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^9|^10"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pixcafe\\Starter\\StarterServiceProvider"
+            ]
+        }
+    }
+}

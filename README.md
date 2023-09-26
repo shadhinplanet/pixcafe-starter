@@ -21,10 +21,18 @@ php artisan vendor:publish --tag=pixcafe-starter --force
 
 *Note: It will affect your web.php (route), so make sure you take backup of your existing web.php file.*
 
-## Route Init
+### Route Init
 In your web.php add bellow code to the end of the file.
 ```php
 require __DIR__ .'/backend.php';
+```
+
+### Update Composer file
+In your composer.json file add bellow code to the "autoload" part of the file.
+```php
+"files": [
+        "app/Helper/Helper.php"
+    ]  
 ```
 
 ### Changelog

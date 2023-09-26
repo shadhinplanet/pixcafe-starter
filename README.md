@@ -34,6 +34,13 @@ In your composer.json file add bellow code to the "autoload" part of the file.
         "app/Helper/Helper.php"
     ]  
 ```
+### Update Composer
+In your project directory run bellow command to autoload helper files.
+```php
+composer dump-autoload
+```
+
+*You're done! Enjoy!*
 
 ### Changelog
 

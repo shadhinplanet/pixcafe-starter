@@ -7,8 +7,7 @@
     "autoload": {
         "psr-4": {
             "Pixcafe\\Starter\\": "src/"
-        },
-        "files": ["src/Helper/Helper.php"]
+        }
     },
     "authors": [
         {
@@ -22,9 +21,6 @@
     "require": {
         "php": "^7.4|^8.0",
         "illuminate/support": "^9|^10"
-    },
-    "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.8"
     },
     "extra": {
         "laravel": {

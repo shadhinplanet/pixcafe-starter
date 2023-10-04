@@ -4,8 +4,8 @@
         var useDarkMode = window.matchMedia('(prefers-color-scheme: oxide)').matches;
         tinymce.init({
             selector: 'textarea#tinyeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
-            plugins: 'code table lists link image',
-            toolbar: 'undo redo | blocks | bold italic | link image alignleft aligncenter alignright | indent outdent | bullist numlist | code | table',
+            plugins: 'code codesample table lists link image fullscreen preview wordcount searchreplace',
+            toolbar: 'undo redo | blocks | bold italic | link image alignleft aligncenter alignright | indent outdent | bullist numlist | code | codesample | fullscreen | preview | searchreplace | table',
             quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
             noneditable_noneditable_class: 'mceNonEditable',
             contextmenu: 'link image imagetools table',

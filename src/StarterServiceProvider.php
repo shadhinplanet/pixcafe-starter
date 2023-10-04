@@ -9,8 +9,6 @@ class StarterServiceProvider extends ServiceProvider
 
     function boot()
     {
-        // $this->loadRoutesFrom(__DIR__ . '/routes/backend.php');
-
         if ($this->app->runningInConsole()) {
             // Config
             $this->publishes([
@@ -45,21 +43,12 @@ class StarterServiceProvider extends ServiceProvider
                 __DIR__ . '/Http/Requests' => app_path('Http/Requests'),
                 __DIR__ . '/Helper' => app_path('Helper/'),
             ], 'pixcafe-starter');
-
-            // $this->replaceInFile('/home', '/dashboard', app_path('Providers/RouteServiceProvider.php'));
-
-            
-
-            // "Dashboard" Route...
-            // $this->replaceInFile('/home', '/dashboard', resource_path('views/welcome.blade.php'));
-            // $this->replaceInFile('Home', 'Dashboard', resource_path('views/welcome.blade.php'));
-            // $txt = "require __DIR__ . '/backend.php';";
-            // file_put_contents(base_path('routes/web.php'), $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+       
         }
-        // $this->appendInFile(base_path('routes/web.php'), "require __DIR__ . '/backend.php';");
+
     }
 
-        
+
     /**
      * Method appendInFile
      *
@@ -89,11 +78,6 @@ class StarterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // exec('composer dump-autoload');
-
-        // Automatically apply the package configuration
-        // $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'starter');
-
         // Register the main class to use with the facade
         $this->app->singleton('starter', function () {
             return new Starter;
